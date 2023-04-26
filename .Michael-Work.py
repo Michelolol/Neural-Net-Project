@@ -56,6 +56,7 @@ test_data = [
 
 ]
 
+
 print(f"case 1: {test_data[0]} evaluates to: {billy.evaluate(test_data[0])}")
 print(f"case 2: {test_data[1]} evaluates to: {billy.evaluate(test_data[1])}")
 #print(f"case 3: {test_data[2]} evaluates to: {billy.evaluate(test_data[2])}")
