@@ -37,4 +37,4 @@ with open('dataset_gun.csv', 'r') as csv_file:
     
 
 for row in data_fix:
-    print(row)
+    print(data_fix[row])
