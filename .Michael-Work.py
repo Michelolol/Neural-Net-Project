@@ -17,6 +17,7 @@ billy.train(training_data)
 test_data = [
     [200, 10, 400, 2000, 4000, 10000, 50000],
     [0, 0, 1, 0, 0, 0, 0],
+
 ]
 
 print(f"case 1: {test_data[0]} evaluates to: {billy.evaluate(test_data[0])}")
