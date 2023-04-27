@@ -40,9 +40,11 @@ with open('dataset_gun.csv', 'r') as csv_file:
     
     
     #data = csv.reader(data_fix)
+column_to_move = data_fix.pop("The regulation of guns")
 
-    
+data_fix['The regulation of guns'] = column_to_move
 
+print(data_fix)
 for row in data_fix:
     print(data_fix[row])
 
