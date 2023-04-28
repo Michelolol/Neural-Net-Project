@@ -48,7 +48,7 @@ training_data = [
 
 
 
-billy = NeuralNet(7, 7, 1)
+billy = NeuralNet(7, 50, 1)                                                                                                                                                                                                                                                                                                                                                                           
 billy.train(training_data)
 
 #[Gp100Civ, GReg, GUnReg, GDeathRate, GSucideRate, GUninentDeath, GRatePolice],
