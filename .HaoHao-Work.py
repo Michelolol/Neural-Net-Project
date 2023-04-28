@@ -51,3 +51,13 @@ for row in data_fix:
 
 
 data_fix.to_csv('FixedGunData.csv')
+
+csv_filename = 'FixedGunData.csv'
+with open(csv_filename) as f:
+    reader = csv.reader(f)
+    lst = list(tuple(line) for line in reader)
+
+print(lst)
+
+billy = NeuralNet(7, 50, 1)                                                                                                                                                                                                                                                                                                                                                                           
+billy.train(lst)
