@@ -62,7 +62,19 @@ for line in td:
     print(line)
 
 nn = NeuralNet(7, 3, 1)
-nn.train(td, iters=100_000, print_interval=1000, learning_rate=0.1)
+nn.train(td, iters=10000, print_interval=1000, learning_rate=0.1)
 
 for i in nn.test_with_expected(td):
     print(f"desired: {i[1]}, actual: {i[2]}")
+
+test_data = [
+    [10000, 10000, 10000, 10000, 40000, 10000, 50000], #biased unre
+    [0, 0, 0, 0, 0, 0, 0], #biased restrict
+    [33000.0,0.0,0.0,19.29,2.37,0.68,0.0], #idk which
+
+]
+
+
+print(f"case 1: {test_data[0]} evaluates to: {nn.evaluate(test_data[0])}")
+print(f"case 2: {test_data[1]} evaluates to: {nn.evaluate(test_data[1])}")
+print(f"case 3: {test_data[2]} evaluates to: {nn.evaluate(test_data[2])}")
