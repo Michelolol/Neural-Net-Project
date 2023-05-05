@@ -58,6 +58,8 @@ with open(csv_filename) as f:
     lst = list(tuple(line) for line in reader)
 
 print(lst)
+for item in lst:
+    
 
 billy = NeuralNet(7, 50, 1)                                                                                                                                                                                                                                                                                                                                                                           
 billy.train(lst)
