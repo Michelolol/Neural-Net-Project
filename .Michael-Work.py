@@ -2,8 +2,8 @@ from neural import NeuralNet
 import csv
 import pandas
 import numpy as np
-
-with open('dataset_gun.csv', 'r') as csv_file:
+"""
+*/with open('dataset_gun.csv', 'r') as csv_file:
     
     data_fix = pandas.read_csv('dataset_gun.csv')
 
@@ -28,7 +28,7 @@ with open('dataset_gun.csv', 'r') as csv_file:
             
     
     print(data_fix)
-    
+    """
     
     
     #data = csv.reader(data_fix)
@@ -54,16 +54,16 @@ billy.train(training_data)
 
 #[Gp100Civ, GReg, GUnReg, GDeathRate, GSucideRate, GUninentDeath, GRatePolice],
 test_data = [
-    [10000, 10000, 10000, 10000, 40000, 10000, 50000],
-    [0, 0, 0, 0, 0, 0, 0],
-    [33000.0,0.0,0.0,19.29,2.37,0.68,0.0], #america, should be 0
+    [10000, 10000, 10000, 10000, 40000, 10000, 50000], #biased unre
+    [0, 0, 0, 0, 0, 0, 0], #biased restrict
+    [33000.0,0.0,0.0,19.29,2.37,0.68,0.0], #idk which
 
 ]
 
 
 print(f"case 1: {test_data[0]} evaluates to: {billy.evaluate(test_data[0])}")
 print(f"case 2: {test_data[1]} evaluates to: {billy.evaluate(test_data[1])}")
-#print(f"case 3: {test_data[2]} evaluates to: {billy.evaluate(test_data[2])}")
+print(f"case 3: {test_data[2]} evaluates to: {billy.evaluate(test_data[2])}")
 #print(f"case 4: {test_data[3]} evaluates to: {billy.evaluate(test_data[3])}")
 #print(f"case 5: {test_data[4]} evaluates to: {billy.evaluate(test_data[4])}")
 
