@@ -57,9 +57,10 @@ with open(csv_filename) as f:
     reader = csv.reader(f)
     lst = list(tuple(line) for line in reader)
 
-print(lst)
-for item in lst:
-    
+simple_data = [item for t in lst for item in t]
+
+
+print(simple_data)
 
 billy = NeuralNet(7, 50, 1)                                                                                                                                                                                                                                                                                                                                                                           
 billy.train(lst)
