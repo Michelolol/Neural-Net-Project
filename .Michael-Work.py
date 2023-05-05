@@ -52,6 +52,7 @@ training_data = [
 
 
 
+
 billy = NeuralNet(7, 50, 1)                                                                                                                                                                                                                                                                                                                                                                           
 billy.train(training_data)
 
