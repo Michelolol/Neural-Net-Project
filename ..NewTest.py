@@ -62,7 +62,7 @@ for line in td:
     print(line)
 
 nn = NeuralNet(7, 5, 1)
-nn.train(td, iters=10000, print_interval=1000, learning_rate=0.1)
+nn.train(td, iters=10000, print_interval=100, learning_rate=0.1)
 
 for i in nn.test_with_expected(td):
     print(f"desired: {i[1]}, actual: {i[2]}")
