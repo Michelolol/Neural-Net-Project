@@ -2,6 +2,7 @@ from neural import NeuralNet
 import csv
 import pandas
 import numpy as np
+
 #,firearms in civilian possession,Registered firearms,Unregistered firearms,Gun Death Rate,Suicide Rate by Firearm,
 # Unintentional Deaths by Firearms, Police Killing (per 10M),The regulation of guns  
 """
